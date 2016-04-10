@@ -1,0 +1,65 @@
+*{
+	margin:0px;
+	padding:0px;
+
+}
+
+
+body 
+{
+
+ background: url(../img/const.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family:'Raleway', sans-serif;
+
+}
+
+#letras {
+	color: white;
+	margin-top: 20%;
+	text-align: center;
+	float:center;
+	font-size: 2em;
+}
+
+#letras .const {
+
+
+	color: yellow;
+
+}
+
+#countdown2
+{
+
+
+
+}
+
+
+
+@media screen and (max-width: 920px){
+
+
+	#letras {
+		font-size: 1em;
+		margin-top: 25%;
+	}
+}
+
+@media screen and (max-width: 600px){
+
+#letras {
+		font-size: 18px;
+		margin-top: 45%;
+	}
+
+
+
+
+}
+
+

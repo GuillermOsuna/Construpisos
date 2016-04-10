@@ -1,0 +1,340 @@
+*{
+	margin:0;
+	padding:0;
+	font-family:'Raleway', sans-serif;
+}
+/***********************************
+				HEADER
+************************************/
+.menu_header{
+	width:100%;
+	float:left;
+	position:fixed;
+	top:0px;
+	background-color:#232323;
+	height:auto;
+}
+
+.menu_logo{
+	border-style: solid;
+	border-color:rgba(0, 85, 143, 1) transparent transparent transparent;
+	border-color:white transparent transparent transparent;
+	border-width: 80px 80px 0px 0px;
+	height: 0;
+	left:0;
+	width: 380px;
+	position: absolute;
+	margin:0;
+	z-index:3;
+	-webkit-transition: border-width 2s;
+	-moz-transition: border-width 2s;
+	-o-transition: border-width 2s;
+
+}
+.menu_logo_area_img{
+	position:absolute;
+	float:left;
+	background-color:transparent;
+	width:380px;
+	height:80px;
+	text-align:center;
+	z-index:3;
+}
+.menu_logo_img{
+	float:left;
+	width:130px;
+	height:auto;
+	margin-left:10px;
+	margin-top:5px;
+	
+}
+
+.linea_divisora{
+	float:left;
+	  -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    margin-top:33px;
+    color:rgba(0, 0, 0, .4);
+}
+
+.menu_logo_slogan{
+	float:left;
+	margin-top:15px;
+	margin-right: 5px;
+}
+.menu_btns{
+	float:right;
+	color:white;
+	
+}
+.menu_btns ul li{
+	float:left;
+	list-style:none;
+	padding:25px;
+}
+.menu_btns ul li:hover{
+	background-color:rgba(255, 255, 255, .1);
+}
+
+.menu_sandwich{
+	display:none;
+	float:right;
+	background-color:transparent;
+	text-align:center;
+	width:68px;
+	height:68px;
+	z-index:2;
+
+}
+.menu_sandwich ul{
+	padding-top:10px;
+	
+}
+.menu_sandwich ul li{
+	list-style:none;
+	display:block;
+	float:left;
+	color:white;
+	width:100%;
+	line-height:12px;
+	margin:0px;
+}
+.menu_sandwich ul .a{
+		-webkit-transition: margin .3s;
+	-moz-transition: margin .3s;
+	-o-transition: margin .3s;
+}
+.menu_sandwich ul .b{
+		-webkit-transition: margin .8s;
+	-moz-transition: margin .8s;
+	-o-transition: margin .8s;
+}
+.menu_sandwich ul .c{
+		-webkit-transition: margin 1s;
+	-moz-transition: margin 1s;
+	-o-transition: margin 1s;
+}
+
+.menu_sandwich_seleccion{
+	display:none;
+	right:0px;
+	top:0px;
+	position:fixed;
+	width:68px;
+	height:68px;
+	background-color:transparent;
+}
+.menu_sandwich_btns{
+	display:none;
+	position:fixed;
+	top:-270px;
+	background-color:#232323;
+	width:100%;
+	height:auto;
+	text-align:center;
+	color:white;
+	z-index:-10;
+}
+.menu_sandwich_btns ul{
+	padding-top:20px;
+	
+}
+.menu_sandwich_btns li{
+	padding:20px;
+	border-bottom:1px solid rgba(255,255,255,.2);
+}
+.menu_sandwich_btns li:hover{
+	color:blue;
+}
+
+
+/***********************************
+				CODIGO
+************************************/
+
+.presentacion_imagen{
+	background: url(../img/helicoptero.jpg) 50% 50% no-repeat;
+	width: 100%;
+	height:700px;
+	position: fixed;
+	top:0;
+	left:0;
+	z-index: -10;
+	overflow: hidden;
+	-webkit-background-size: cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size: cover;
+}
+
+.presentacion_blur{
+	position:fixed;
+	width:100%;
+	height:700px;
+	z-index:-9;
+	background-color:rgba(0, 0, 10, .5);
+}
+.seccion{
+	float:left;
+	margin-top:700px;
+	height:300px;
+	width:100%;
+	background-color:white;
+}
+
+
+.cargando_color{
+	position:fixed;
+	width:100%;
+	height:100%;
+	background-color:rgb(45, 45, 45);
+	z-index:100;
+	visibility:hidden;
+	animation:modal 0s 2s forwards;
+}
+@keyframes modal{
+	100%{
+		visibility:hidden;
+
+	}
+
+}
+.cargando_contenido{
+	margin-top:100px;
+}
+.medio_circulo_principal{
+	position:fixed;
+	border-radius:100%;
+	border-style: solid;
+	border-color:rgba(30, 95, 153, 1) rgba(30, 95, 153, 1) transparent rgba(30, 95, 153, 1);
+	border-width: 50px;
+	height: 0;
+	width: 0px;
+	margin-top:250px;
+	margin-left: 45%;
+}
+
+.area_oculta{
+	position:fixed;
+	float:left;
+	border-radius:100%;
+	border-style: solid;
+	border-color:rgb(45, 45, 45);
+	left:5px;
+	top:5px;
+	border-width: 45px;
+	height: 0;
+	width: 0px;
+margin-top:250px;
+	margin-left: 45%;
+}
+.medio_circulo_principal2{
+	position:fixed;
+	border-radius:100%;
+	border-style: solid;
+	border-color:rgba(30, 95, 153, 1) rgba(30, 95, 153, 1) transparent rgba(30, 95, 153, 1);
+	border-width: 30px;
+	left:20px;
+	top:20px;
+	height: 0;
+	width: 0px;
+margin-top:250px;
+	margin-left: 45%;
+}
+.area_oculta2{
+	position:fixed;
+	border-radius:100%;
+	border-style: solid;
+	border-color:rgb(45, 45, 45);
+	border-width: 25px;
+	left:25px;
+	top:25px;
+	height: 0;
+	width: 0px;
+	margin-top:250px;
+	margin-left: 45%;
+
+}
+
+
+/***********************************
+			MEDIA QUERYS
+************************************/
+@media screen and (max-width: 920px){
+	.menu_btns ul{
+		display:none;
+	}
+	.menu_sandwich{
+		display:block;
+	}
+	.menu_sandwich_seleccion{
+	display:block;
+	}
+
+	.menu_sandwich_btns{
+	display:block;
+	}
+
+}
+@media screen and (max-width: 600px){
+	.menu_logo{
+		width:300px;
+	}
+	.menu_logo_img{
+		width:300px;
+	}
+		.seccion{
+	margin-top:600px;
+}
+
+}
+@media screen and (max-width: 480px){
+	.menu_logo{
+		width:150px;
+	}
+	.menu_logo_img{
+		width:150px;
+	}
+		.seccion{
+	margin-top:500px;
+}
+
+
+}
+
+
+
+
+/***********************************
+				FOOTER
+************************************/
+footer{
+	float:left;
+	width:100%;
+	height:400px;
+	background-color:#282828;
+	color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
